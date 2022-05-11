@@ -1,4 +1,4 @@
-from pickle import OBJ
+
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from store.models import Product
@@ -38,7 +38,7 @@ def add_cart(request,product_id):
 
 
 def cart(request):
-    total = 25
+    total = 0
     quantity = 0
     tax = 0
     grand_total = 0
